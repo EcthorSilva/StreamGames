@@ -25,7 +25,7 @@ export default function Bestsellers() {
                         <span className="badge text-bg-danger">{id}</span>
                     </h4>
                 </div>
-                <div className="col-md-3">
+                <div className="col-4 col-md-3">
                     <Image
                     src={imagem}
                     alt={`Capa do ${titulo}`}
@@ -34,7 +34,7 @@ export default function Bestsellers() {
                     className="img-fluid rounded-start"
                     />
                 </div>
-                <div className="col-md-8">
+                <div className="col-8 col-md-8">
                     <div className="position-absolute bottom-0 end-0 p-2">
                         <h6 className="text-reset bg-dark bg-opacity-75 p-1 rounded" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
                             {preco} <span className="badge text-bg-danger">{desconto}</span>
@@ -43,7 +43,7 @@ export default function Bestsellers() {
                     <div className="card-body">
                         <h5 className="card-title">{titulo}</h5>
                         <p className="card-text">{descricao}</p>
-                        <p className="card-text"><small className="text-body-secondary">{atualizado}</small></p>
+                        <p className="card-text d-none d-sm-block"><small className="text-body-secondary">{atualizado}</small></p>
                     </div>
                 </div>
             </div>
