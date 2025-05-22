@@ -1,10 +1,8 @@
-import Header from '@/components/Header';
-import HighlightCarousel from "@/components/HighlightCarousel";
-import PublisherHighlight from '@/components/PublisherHighlight';
-import BannerHighlight from '@/components/BannerHighlight';
-import Footer from '@/components/Footer';
+import HighlightCarousel from "@/components/Home/HighlightCarousel";
+import PublisherHighlight from '@/components/Home/PublisherHighlight';
+import BannerHighlight from '@/components/Home/BannerHighlight';
 
-import Image from 'next/image';
+import {Header, Footer} from '@/components/Layout';
 
 export const metadata = {
   title: 'Home | StreamGames',
@@ -39,7 +37,7 @@ export default function Home() {
     </main>
   );
 }
-
+{/* Itens dos Destaques - It’ll blow your mind */}
 const HighlightCarouselItems = [
   {
     image: "https://assets.nuuvem.com/image/upload/t_quality_80/v1/highlights/6317966c632c3d0015f472ec/q9zx384trfvtixe46opy.jpg",
@@ -70,7 +68,7 @@ const HighlightCarouselItems = [
     alt: "Destaque 4"
   }
 ];
-
+{/* Itens dos Destaques - Publicadora */}
 const PublisherHighlightItems = [
   {
     title: "Resident Evil",
