@@ -1,6 +1,7 @@
 import HighlightCarousel from "@/components/Home/HighlightCarousel";
 import PublisherHighlight from '@/components/Home/PublisherHighlight';
 import BannerHighlight from '@/components/Home/BannerHighlight';
+import Bestsellers from '@/components/Home/Bestsellers';
 
 import {Header, Footer} from '@/components/Layout';
 
@@ -33,6 +34,8 @@ export default function Home() {
         price="R$54,79"
         discount="-60%"
       />
+      {/* Destaques - Mais vendidos */}
+      <Bestsellers />
       <Footer />
     </main>
   );
