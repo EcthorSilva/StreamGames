@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import PublisherHighlight from '@/components/PublisherHighlight';
 import BannerHighlight from '@/components/BannerHighlight';
+import Footer from '@/components/Footer';
 
 import Image from 'next/image';
 
@@ -117,6 +118,42 @@ export default function Home() {
         price="R$99,99"
         discount="-50%"
       />
+      <PublisherHighlight
+        title="CAPCOM"
+        products={[
+          {
+            title: "Resident Evil",
+            img: "https://assets.nuuvem.com/image/upload/t_banner_big/v1/products/635951f2bdc65c2b68ecb095/banners/etxq8vej3ebm0pz0s5rs.jpg",
+            price: "R$47,99",
+            discount: "-60%",
+          },
+          {
+            title: "Street Fighter V",
+            img: "https://assets.nuuvem.com/image/upload/t_banner_big/v1/products/564c95ef69702d648a00011d/banners/jpoaxzjljzw1wiqot603.jpg",
+            price: "R$47,99",
+            discount: "-60%",
+          },
+          {
+            title: "Resident Evil Village",
+            img: "https://assets.nuuvem.com/image/upload/t_banner_big/v1/products/600f36b1c883e6464c052882/banners/tdgiqqtvxmycwabbatg3.jpg",
+            price: "R$47,99",
+            discount: "-60%",
+          },
+          {
+            title: "Resident Evil 3",
+            img: "https://assets.nuuvem.com/image/upload/t_banner_big/v1/products/5df7db71e8d4f2071032bbd1/banners/bt35weatc5dorv6da9jf.jpg",
+            price: "R$47,99",
+            discount: "-60%",
+          }
+        ]}
+      />
+      <BannerHighlight
+        img="https://assets.nuuvem.com/image/upload/t_quality_80/v1/highlights/65257415850bd90019a891d3/gzdstpzumebn04yjmeko.jpg"
+        alt="Banner destaque"
+        price="R$54,79"
+        discount="-60%"
+      />
+      <Footer />
     </main>
   );
 }
