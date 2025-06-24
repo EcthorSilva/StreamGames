@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function FeaturedGames() {
   return (
-    <section className="w-full max-w-7xl mx-auto py-10 px-4">
+    <section className="w-full max-w-7xl mx-auto py-8 px-4">
       <h2 className="text-2xl font-bold mb-6">Destaques da semana</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -21,7 +21,7 @@ export default function FeaturedGames() {
                 src={game.imageUrl}
                 alt={game.title}
                 fill
-                className="object-cover rounded-lg transition duration-300 hover:scale-105"
+                className="object-cover rounded-lg hover:brightness-110 transition-transform duration-400 hover:scale-105"
                 />
 
               {/* Preço/Desconto flutuante */}

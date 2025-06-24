@@ -47,13 +47,6 @@ const originalGames = [
         imageUrl: "https://cdn1.epicgames.com/spt-assets/ce3cfe56d21147dcb398823206cf9073/tankhead-c7n4p.jpg?resize=1&w=360&h=480&quality=medium",
         price: "R$ 199,00",
     },
-    {
-        id: "7",
-        title: "Sid Meier's Civilization® VII",
-        type: "Jogo base",
-        imageUrl: "https://cdn1.epicgames.com/offer/eb9cdf6dbe4b47fc8ba474017023476a/STANDART--METADATA-PRODUCT_OFFER_PORTRAIT_IMAGE-STATIC-ENUS-NO_RATING-EPIC-1200X1600-QA_1200x1600-7a2a0b7697c6355fed8da2a407ff17b2?resize=1&w=360&h=480&quality=medium",
-        price: "R$ 99,90",
-    },
 ];
 
 const catalogGames = Array.from({ length: 6 }).flatMap(() => originalGames).map((game, index) => ({ ...game, id: `${game.id}-${index}` }));
@@ -61,11 +54,11 @@ const catalogGames = Array.from({ length: 6 }).flatMap(() => originalGames).map(
 export default function ItensPage() {
     return (
         <div className="min-h-screen font-sans">
-            <div className="w-full max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div className="w-full max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
                 {/* Cabeçalho da página do catálogo */}
-                <div className="text-center mb-12">
-                    <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-2">Catálogo de Jogos</h1>
-                    <p className="text-lg text-gray-500">Explore nossa coleção completa de títulos</p>
+                <div className="text-center mb-6">
+                    <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-2">Jogos em Promoção</h1>
+                    <p className="text-lg text-gray-500">Explore nossa coleção completa de títulos em promoção.</p>
                 </div>
                 {/* Grid responsivo para os cards dos jogos */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-4 gap-y-8">
@@ -86,7 +79,7 @@ export default function ItensPage() {
                                     <img
                                         src={game.imageUrl}
                                         alt={`Capa do jogo ${game.title}`}
-                                        className="w-full h-auto object-cover rounded-lg aspect-[3/4] group-hover:brightness-110 transition-transform duration-300 group-hover:scale-105"
+                                        className="w-full h-auto object-cover rounded-lg aspect-[3/4] group-hover:brightness-110 transition-transform duration-400"
                                     />
                                 </div>
                             </div>

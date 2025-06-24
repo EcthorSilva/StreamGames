@@ -4,12 +4,13 @@ import * as React from "react"
 import { Button } from "@/components/ui/button"
 import { Navbar } from "@/components/navbar/navbar.jsx"
 import { Logo } from "./logo";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Header() {
   return (
     <nav className="py-2 border-0">
       <div className="container mx-auto flex flex-wrap justify-around">
-        <Logo/>
+        <ThemeToggle /> {/* 2. Substitua o Logo pelo ThemeToggle */}
         <div className="hidden md:flex">
           <Navbar />
         </div>
