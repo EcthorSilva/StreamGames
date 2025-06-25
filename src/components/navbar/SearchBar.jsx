@@ -2,7 +2,7 @@
 
 import { Search } from "lucide-react";
 
-export default function SearchBar() {
+export default function SearchBar({ value, onChange }) {
   return (
     <div className="relative w-full">
       <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -12,6 +12,8 @@ export default function SearchBar() {
         type="search"
         placeholder="Pesquisar jogos no catálogo..."
         className="border block w-full rounded-md border-input bg-background/50 py-2 pl-10 pr-3 text-sm placeholder:text-muted-foreground focus:border-primary focus:ring-primary"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
       />
     </div>
   );
