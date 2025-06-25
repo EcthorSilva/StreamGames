@@ -14,8 +14,10 @@ export default function HomePage() {
             <Header />
             <HeroCarousel />
             <DiscoverCarousel />
-            <PublisherHighlight />
-            <FeaturedGames />
+            <PublisherHighlight publisherName="PlayStation Publishing LLC" />
+            {/* <PublisherHighlight publisherName="Ubisoft Entertainment" />
+            <PublisherHighlight publisherName="Electronic Arts" /> */}
+            <FeaturedGames featuredGameIds={[11, 10]} />
             <DiscoverCarousel />
             <FeaturedNews />
             <DiscoverCarousel />

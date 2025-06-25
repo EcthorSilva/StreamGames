@@ -1,3 +1,5 @@
+import { Description } from "@radix-ui/react-dialog";
+
 export const GamesData = [
     {
         id: 1,
@@ -187,28 +189,30 @@ export const GamesData = [
             { id: 6, image: "https://media.rawg.io/media/screenshots/7cb/7cb256eecd9dd0bb54d4524dc2a9b7ee.jpg" }
         ],
     },
+        // a partir daqui, os jogos podem estar com as informações incompletas
     {
         id: 9,
-        name: "The Last of Us™ Part I — Atualize para a Edição Digital Deluxe",
-        type: "Complemento",
-        price: "50",
+        name: "UNCHARTED™: Coleção Legado dos Ladrões",
+        type: "Jogo base",
+        price: "199,90",
         discount: "0",
         publisher: "PlayStation Publishing LLC",
         developer: [
-            "Naughty Dog LLC"
+            "Naughty Dog LLC", " ", " "
         ],
         genreIds: [1, 2],
         platformIds: [1, 2],
-        storeIds: [1, 2, 4],
-        gamecover: "https://cdn1.epicgames.com/offer/0c40923dd1174a768f732a3b013dcff2/EGS_UpgradetoDigitalDeluxeEdition_NaughtyDogLLC_AddOn_S2_1200x1600-0ff89dae27795b746ec117b8b7956b75?resize=1&w=360&h=480&quality=medium",
-        background_image: "https://media.rawg.io/media/games/71d/71df9e759b2246f9769126c98ac997fc.jpg",
+        storeIds: [1, 2],
+        gamecover: "https://cdn1.epicgames.com/offer/8b2d6cf2b45b41f1abe91bc5b7c1e8f9/EGS_UNCHARTEDLegacyofThievesCollection_NaughtyDogLLC_S2_1200x1600-9deaa177d8716bde5478cdd75d850c9c?resize=1&w=360&h=480&quality=medium",
+        background_image: " ",
         short_screenshots: [
-            { id: 1, image: "https://media.rawg.io/media/screenshots/723/7232dfba2a746be21a0e8548b5333dd7.jpg" },
-            { id: 2, image: "https://media.rawg.io/media/screenshots/eb5/eb5a0522dbb56b8f698ac3fa8b884341.jpg" },
-            { id: 3, image: "https://media.rawg.io/media/screenshots/b0f/b0f8ff8c24bc46ca70a20ee4b83d9569.jpg" },
-            { id: 4, image: "https://media.rawg.io/media/screenshots/276/276688cddf9531e6cbcccc3368dfa25f.jpg" },
-            { id: 5, image: "https://media.rawg.io/media/screenshots/585/585fd40ad660779a79e2853f3cd7a833.jpg" },
-            { id: 6, image: "https://media.rawg.io/media/screenshots/7cb/7cb256eecd9dd0bb54d4524dc2a9b7ee.jpg" }
+            { id: 1, image: " " },
+            { id: 2, image: " " },
+            { id: 3, image: " " },
+            { id: 4, image: " " },
+            { id: 5, image: " " },
+            { id: 6, image: " " },
+            { id: 7, image: " " }
         ],
     },
     {
@@ -234,8 +238,8 @@ export const GamesData = [
             { id: 5, image: "https://media.rawg.io/media/screenshots/22c/22c038eb6dfcf4ba3b466e3bacc451c5.jpg" },
             { id: 6, image: "https://media.rawg.io/media/screenshots/ea0/ea0af644fb10443ffff0b3dad18efc99.jpg" }
         ],
+        description: "Uma versão aprimorada do jogo de ação e aventura de mundo aberto, onde você joga como Sam Porter Bridges, um entregador em um mundo pós-apocalíptico que deve reconectar a América.",
     },
-    // a partir daqui, os jogos estão com as informações incompletas
     {
         id: 11,
         name: "Days Gone",
@@ -250,7 +254,7 @@ export const GamesData = [
         platformIds: [1, 2],
         storeIds: [1, 2],
         gamecover: "https://cdn1.epicgames.com/9f4875c1b0cf4cf19b28e203fc7aff07/offer/EGS_Brutalopenworldactionadventuregame_BendStudio_S2-1200x1600-e1c183cc11fdb47e26581e5ba19aa10a.jpg?resize=1&w=360&h=480&quality=medium",
-        background_image: " ",
+        background_image: "https://media.rawg.io/media/games/a79/a79d2fc90c4dbf07a8580b19600fd61d.jpg",
         short_screenshots: [
             { id: 1, image: " " },
             { id: 2, image: " " },
@@ -260,6 +264,7 @@ export const GamesData = [
             { id: 6, image: " " },
             { id: 7, image: " " }
         ],
+        description: "Um jogo de ação e aventura em mundo aberto ambientado em um mundo pós-apocalíptico, onde você joga como Deacon St. John, um ex-motociclista e caçador de recompensas tentando sobreviver.",
     },
     {
         id: 12,
@@ -311,29 +316,28 @@ export const GamesData = [
             { id: 7, image: " " }
         ],
     },
-    {
+        {
         id: 14,
-        name: "UNCHARTED™: Coleção Legado dos Ladrões",
-        type: "Jogo base",
-        price: "199,90",
+        name: "The Last of Us™ Part I — Atualize para a Edição Digital Deluxe",
+        type: "Complemento",
+        price: "50",
         discount: "0",
         publisher: "PlayStation Publishing LLC",
         developer: [
-            "Naughty Dog LLC", " ", " "
+            "Naughty Dog LLC"
         ],
         genreIds: [1, 2],
         platformIds: [1, 2],
-        storeIds: [1, 2],
-        gamecover: "https://cdn1.epicgames.com/offer/8b2d6cf2b45b41f1abe91bc5b7c1e8f9/EGS_UNCHARTEDLegacyofThievesCollection_NaughtyDogLLC_S2_1200x1600-9deaa177d8716bde5478cdd75d850c9c?resize=1&w=360&h=480&quality=medium",
-        background_image: " ",
+        storeIds: [1, 2, 4],
+        gamecover: "https://cdn1.epicgames.com/offer/0c40923dd1174a768f732a3b013dcff2/EGS_UpgradetoDigitalDeluxeEdition_NaughtyDogLLC_AddOn_S2_1200x1600-0ff89dae27795b746ec117b8b7956b75?resize=1&w=360&h=480&quality=medium",
+        background_image: "https://media.rawg.io/media/games/71d/71df9e759b2246f9769126c98ac997fc.jpg",
         short_screenshots: [
-            { id: 1, image: " " },
-            { id: 2, image: " " },
-            { id: 3, image: " " },
-            { id: 4, image: " " },
-            { id: 5, image: " " },
-            { id: 6, image: " " },
-            { id: 7, image: " " }
+            { id: 1, image: "https://media.rawg.io/media/screenshots/723/7232dfba2a746be21a0e8548b5333dd7.jpg" },
+            { id: 2, image: "https://media.rawg.io/media/screenshots/eb5/eb5a0522dbb56b8f698ac3fa8b884341.jpg" },
+            { id: 3, image: "https://media.rawg.io/media/screenshots/b0f/b0f8ff8c24bc46ca70a20ee4b83d9569.jpg" },
+            { id: 4, image: "https://media.rawg.io/media/screenshots/276/276688cddf9531e6cbcccc3368dfa25f.jpg" },
+            { id: 5, image: "https://media.rawg.io/media/screenshots/585/585fd40ad660779a79e2853f3cd7a833.jpg" },
+            { id: 6, image: "https://media.rawg.io/media/screenshots/7cb/7cb256eecd9dd0bb54d4524dc2a9b7ee.jpg" }
         ],
     },
     {

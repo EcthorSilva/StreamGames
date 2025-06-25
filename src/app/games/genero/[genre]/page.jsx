@@ -1,4 +1,5 @@
 import { Header } from "@/components/navbar/header";
+import SearchHeader from "@/components/navbar/SearchHeader";
 import Footer from "@/components/footer/Footer";
 import Link from "next/link";
 
@@ -18,6 +19,7 @@ export default function GenreCatalogPage({ params }) {
   return (
     <div>
       <Header />
+      <SearchHeader />
       <div className="min-h-screen font-sans">
         <div className="w-full max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
