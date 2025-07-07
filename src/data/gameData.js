@@ -319,7 +319,7 @@ export const GamesData = [
         {
         id: 14,
         name: "The Last of Us™ Part I — Atualize para a Edição Digital Deluxe",
-        type: "Complemento",
+        type: "DLC",
         price: "50",
         discount: "0",
         publisher: "PlayStation Publishing LLC",
@@ -390,31 +390,54 @@ export const GamesData = [
             { id: 7, image: " " }
         ],
     },
-    // {
-    //     id: 17,
-    //     name: " ",
-    //     type: "Jogo base",
-    //     price: " ",
-    //     discount: "0",
-    //     publisher: " ",
-    //     developer: [
-    //         " ", " ", " "
-    //     ],
-    //     genreIds: [1, 2],
-    //     platformIds: [1, 2],
-    //     storeIds: [1, 2],
-    //     gamecover: " ",
-    //     background_image: " ",
-    //     short_screenshots: [
-    //         { id: 1, image: " " },
-    //         { id: 2, image: " " },
-    //         { id: 3, image: " " },
-    //         { id: 4, image: " " },
-    //         { id: 5, image: " " },
-    //         { id: 6, image: " " },
-    //         { id: 7, image: " " }
-    //     ],
-    // },
+    {
+        id: 17,
+        name: "Elden Ring",
+        type: "Jogo base",
+        price: "274,50",
+        discount: "-45%",
+        publisher: "BANDAI NAMCO Entertainment",
+        developer: [
+            "FromSoftware, Inc",
+        ],
+        genreIds: [1, 3],
+        platformIds: [1, 2, 3, 5, 6],
+        storeIds: [1, 4, 5],
+        gamecover: "https://cdn2.steamgriddb.com/thumb/b7dc60f5a597d2a0687c2c43a3cd3417.jpg",
+        background_image: " ",
+        short_screenshots: [
+            { id: 1, image: "https://media.rawg.io/media/screenshots/36f/36f941f72e2b2a41629f5fb3bd448688.jpg" },
+            { id: 2, image: "https://media.rawg.io/media/screenshots/290/29096848622521df7555850000236cb6.jpg" },
+            { id: 3, image: "https://media.rawg.io/media/screenshots/807/807685454ea8fb87363eedd49677f49b.jpg" },
+            { id: 4, image: "https://media.rawg.io/media/screenshots/2ee/2eea4d4cce2836f689d9d39d2a4a94d5.jpg" },
+            { id: 5, image: "https://media.rawg.io/media/screenshots/de9/de9b28bdd0bdb9937c7f82e55f845bb6.jpg" },
+            { id: 6, image: "https://media.rawg.io/media/screenshots/3a2/3a2e5f31e2061bc566bcfd30fda56a17.jpg" }
+        ],
+    },
+    {
+        id: 18,
+        name: "Elden Ring: Shadow of the Erdtree",
+        type: "DLC",
+        price: "274,50",
+        discount: "-45%",
+        publisher: "BANDAI NAMCO Entertainment",
+        developer: [
+            "FromSoftware, Inc",
+        ],
+        genreIds: [1, 3],
+        platformIds: [1, 2, 3, 5, 6],
+        storeIds: [1, 4, 5],
+        gamecover: "https://cdn2.steamgriddb.com/thumb/1a17c8377190ffa2559c3e821f8d8d09.jpg",
+        background_image: "https://media.rawg.io/media/screenshots/0ba/0bae7160eedc1f7d85a8d2db70cf1ec9.jpg",
+        short_screenshots: [
+            { id: 1, image: "https://media.rawg.io/media/screenshots/ba6/ba6675855ee539784357aed3ca095ce2.jpg" },
+            { id: 2, image: "https://media.rawg.io/media/screenshots/bb9/bb9498e278d38066f35128600ead5d38.jpg" },
+            { id: 3, image: "https://media.rawg.io/media/screenshots/88b/88b67b29b5349ce78a6bf9b0d2486125.jpg" },
+            { id: 4, image: "https://media.rawg.io/media/screenshots/abd/abdd2a301e6156406aef61430a28c0a9_myeMjlP.jpg" },
+            { id: 5, image: "https://media.rawg.io/media/screenshots/394/394afcdcc64eff27002f7bc2383c2ade.jpg" },
+            { id: 6, image: "https://media.rawg.io/media/screenshots/cb2/cb27a3f806860ac667e6edf9a1f8dd1d.jpg" }
+        ],
+    },
     // {
     //     id: 18,
     //     name: " ",
