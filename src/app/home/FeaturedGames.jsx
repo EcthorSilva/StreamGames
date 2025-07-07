@@ -29,7 +29,7 @@ export default function FeaturedGames({ featuredGameIds = [] }) {
           return (
             <div key={game.id} className="flex flex-col">
               <Link
-                href={`/game/${game.id}`}
+                href={`/games/${game.id}`}
                 className="block w-full h-60 relative rounded-lg overflow-hidden group"
               >
                 <Image
