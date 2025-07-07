@@ -14,16 +14,16 @@ export const GamesData = [
         genreIds: [1, 2],
         platformIds: [1, 2],
         storeIds: [1, 2],
+        logo: "https://cdn2.steamgriddb.com/logo_thumb/cad44517b35950ca85cffe44458ff25a.png",
         gamecover: "https://cdn1.epicgames.com/offer/7713e3fa4b234e0d8f553044205d53b6/EGS_TheLastofUsPartIIRemastered_NaughtyDogLLCNixxesSoftwareIronGalaxy_S2_1200x1600-2e13755a6b3fec2ee9dbcc231a1cf39c?resize=1&w=360&h=480&quality=medium",
         background_image: "https://media.rawg.io/media/games/d09/d099b508a1cfb5bd2f2928b50e0784a5.jpg",
         short_screenshots: [
-            { id: 1, image: "https://media.rawg.io/media/games/d09/d099b508a1cfb5bd2f2928b50e0784a5.jpg" },
-            { id: 2, image: "https://media.rawg.io/media/screenshots/6dc/6dc21b83139e586dd56755b352b921c5.jpg" },
-            { id: 3, image: "https://media.rawg.io/media/screenshots/2c7/2c7cd6b1257f8a07b01c8889a2b14a9d.jpg" },
-            { id: 4, image: "https://media.rawg.io/media/screenshots/51d/51d6d1591c47886b09c12544b6b1dc82.jpg" },
-            { id: 5, image: "https://media.rawg.io/media/screenshots/4f6/4f6921b263dcbe0a6ad58d4e2f5f15e8.jpg" },
-            { id: 6, image: "https://media.rawg.io/media/screenshots/5b6/5b6ca3d7560717089b6a52b5b5ce83ac.jpg" },
-            { id: 7, image: "https://media.rawg.io/media/screenshots/e2b/e2bf9482bb198af39cd6ac7431e7e1a7.jpg" }
+            { id: 1, image: "https://media.rawg.io/media/screenshots/6dc/6dc21b83139e586dd56755b352b921c5.jpg" },
+            { id: 2, image: "https://media.rawg.io/media/screenshots/2c7/2c7cd6b1257f8a07b01c8889a2b14a9d.jpg" },
+            { id: 3, image: "https://media.rawg.io/media/screenshots/51d/51d6d1591c47886b09c12544b6b1dc82.jpg" },
+            { id: 4, image: "https://media.rawg.io/media/screenshots/4f6/4f6921b263dcbe0a6ad58d4e2f5f15e8.jpg" },
+            { id: 5, image: "https://media.rawg.io/media/screenshots/5b6/5b6ca3d7560717089b6a52b5b5ce83ac.jpg" },
+            { id: 6, image: "https://media.rawg.io/media/screenshots/e2b/e2bf9482bb198af39cd6ac7431e7e1a7.jpg" }
         ],
     },
     {
@@ -229,6 +229,7 @@ export const GamesData = [
         genreIds: [1, 2],
         platformIds: [1, 2],
         storeIds: [1, 2, 3],
+        logo: "https://cdn2.steamgriddb.com/logo_thumb/696e971e8603d1fe84f8d29ab0865dd7.png",
         gamecover: "https://cdn1.epicgames.com/offer/0a9e3c5ab6684506bd624a849ca0cf39/EGS_DeathStrandingDirectorsCut_KOJIMAPRODUCTIONS_S4_1200x1600-5f99e16507795f9b497716b470cfd876?resize=1&w=360&h=480&quality=medium",
         background_image: "https://media.rawg.io/media/games/b6f/b6fa0cde8a1204c7d6edc2ec3c753df9.jpg",
         short_screenshots: [

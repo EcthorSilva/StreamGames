@@ -30,7 +30,7 @@ export default function ItensPage() {
                                 let finalPrice = originalPrice * (1 - (discountPercent > 0 ? discountPercent / 100 : 0));
                                 const displayPrice = finalPrice.toFixed(2).replace(".", ",");
                                 return (
-                                    <Link href={`/game/${game.id}`} key={game.id} legacyBehavior>
+                                    <Link href={`/games/${game.id}`} key={game.id} legacyBehavior>
                                         <a className="group cursor-pointer">
                                             <div className="bg-transparent border-none overflow-hidden rounded-lg"><div className="p-0 relative"><div className="absolute bottom-2 right-2 z-10"><div className="flex items-center gap-2 rounded-lg bg-black/70 px-2 py-1 text-sm text-white backdrop-blur-sm"><span className="font-bold text-base">R$ {displayPrice}</span>{discountPercent > 0 && (<span className="rounded bg-red-600 px-1.5 py-0.5 text-xs font-bold">{game.discount}</span>)}</div></div><img src={game.gamecover} alt={`Capa do jogo ${game.name}`} className="w-full h-auto object-cover rounded-lg aspect-[3/4] group-hover:brightness-110 transition-transform duration-300"/></div></div>
                                             <div className="mt-3 px-1"><p className="text-sm text-gray-500">{game.type}</p><h3 className="font-semibold truncate transition-colors">{game.name}</h3></div>

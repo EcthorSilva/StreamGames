@@ -154,7 +154,7 @@ const heroGames = [
     description: "Experimente a premiada história de Ellie e Abby com melhorias gráficas e novos modos de jogo.",
     imageUrl: "https://media.rawg.io/media/games/909/909974d1c7863c2027241e265fe7011f.jpg",
     imageBlurUrl: "https://media.rawg.io/media/crop/600/400/games/909/909974d1c7863c2027241e265fe7011f.jpg",
-    href: "/games/the-last-of-us-part-ii-remastered",
+    href: "/games/1",
   },
   {
     id: "2",

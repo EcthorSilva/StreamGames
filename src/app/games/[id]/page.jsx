@@ -31,10 +31,9 @@ export default function GamePage({ params }) {
         notFound();
     }
 
-    const carouselImages = [
-        { id: "bg", image: game.background_image },
-        ...game.short_screenshots,
-    ].filter(img => img.image && img.image.trim() !== "");
+    const carouselImages = [...game.short_screenshots].filter(
+        (img) => img.image && img.image.trim() !== ""
+    );
 
     const originalPrice = parseFloat(game.price.replace(",", "."));
     const discountPercent = parseInt(game.discount.replace(/[^0-9]/g, ""), 10) || 0;
@@ -122,9 +121,9 @@ export default function GamePage({ params }) {
                     </div>
 
                     {/* Sidebar (Direita) */}
-                    <aside className="md:col-span-1 mt-0 md:mt-8">
+                    <aside className="md:col-span-1 mt-0 md:mt-0">
                         <div className="sticky top-24">
-                            <div className="hidden md:flex mb-4 items-center justify-center p-4 min-h-[200px]">
+                            <div className="hidden md:flex mb-4 items-center justify-center p-4 min-h-[280px]">
                                 <div className="relative w-full max-w-[250px] h-[100px]">
                                     <Image
                                         src={displayImage}
