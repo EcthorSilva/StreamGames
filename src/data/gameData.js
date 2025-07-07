@@ -178,7 +178,8 @@ export const GamesData = [
         genreIds: [1, 2],
         platformIds: [1, 2],
         storeIds: [1, 2, 4],
-        gamecover: "https://cdn1.epicgames.com/offer/0c40923dd1174a768f732a3b013dcff2/EGS_TheLastofUsPartI_NaughtyDogLLC_S2_1200x1600-41d1b88814bea2ee8cb7986ec24713e0?resize=1&w=360&h=480&quality=medium",
+        logo: "https://cdn2.steamgriddb.com/logo_thumb/1956768b78ac039215c9600c9691c572.png",
+        gamecover: "https://cdn2.steamgriddb.com/thumb/44fd6fd3bc224014b6279236cda91a70.jpg",
         background_image: "https://media.rawg.io/media/games/71d/71df9e759b2246f9769126c98ac997fc.jpg",
         short_screenshots: [
             { id: 1, image: "https://media.rawg.io/media/screenshots/723/7232dfba2a746be21a0e8548b5333dd7.jpg" },
@@ -403,6 +404,7 @@ export const GamesData = [
         genreIds: [1, 3],
         platformIds: [1, 2, 3, 5, 6],
         storeIds: [1, 4, 5],
+        logo: "https://cdn2.steamgriddb.com/logo_thumb/6076036fdb272f49688c571013f3ede1.png",
         gamecover: "https://cdn2.steamgriddb.com/thumb/b7dc60f5a597d2a0687c2c43a3cd3417.jpg",
         background_image: " ",
         short_screenshots: [
