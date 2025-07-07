@@ -44,11 +44,6 @@ export default function GamePage({ params }) {
     const displayPrice = finalPrice.toFixed(2).replace(".", ",");
     const originalDisplayPrice = originalPrice.toFixed(2).replace(".", ",");
 
-    const gamePlatforms = game.platformIds.map(id => platforms.find(p => p.id === id)).filter(Boolean);
-    const gameGenres = game.genreIds.map(id => genres.find(g => g.id === id)).filter(Boolean);
-    const gameStores = game.storeIds.map(id => stores.find(s => s.id === id)).filter(Boolean);
-
-    // Define a imagem a ser usada: prioriza o logo, mas usa a capa se o logo não existir.
     const displayImage = game.logo || game.gamecover;
     const imageAlt = game.logo ? `Logo do jogo ${game.name}` : `Capa do jogo ${game.name}`;
 
@@ -81,6 +76,49 @@ export default function GamePage({ params }) {
                             <CarouselPrevious className="left-4" />
                             <CarouselNext className="right-4" />
                         </Carousel>
+
+                        {/* Bloco de preço mobile */}
+                        <div className="md:hidden mt-8 pb-6 space-y-4 ">
+                            <div className="p-2 rounded-lg">
+                                <div className="flex items-center justify-between gap-4">
+                                    {discountPercent > 0 && (
+                                        <Badge variant="destructive" className="text-base">{game.discount}</Badge>
+                                    )}
+                                    <div className="flex flex-col items-end">
+                                        {discountPercent > 0 && (
+                                            <span className="text-sm text-muted-foreground line-through">
+                                                R$ {originalDisplayPrice}
+                                            </span>
+                                        )}
+                                        <span className="text-2xl font-bold">R$ {displayPrice}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="mt-4 grid grid-cols-1 gap-3">
+                                <Button size="lg">
+                                    <ShoppingCart className="mr-2" />
+                                    Adicionar ao Carrinho
+                                </Button>
+                                <Button size="lg" variant="outline">
+                                    <Heart className="mr-2" />
+                                    Adicionar à Lista de Desejos
+                                </Button>
+                            </div>
+
+                            <Separator className="my-6" />
+
+                            <div className="space-y-4 text-sm">
+                                <div className="flex justify-between">
+                                    <span className="text-muted-foreground">Desenvolvedora</span>
+                                    <span className="font-semibold text-right">{game.developer.filter(d => d.trim()).join(", ")}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                    <span className="text-muted-foreground">Publicadora</span>
+                                    <span className="font-semibold text-right">{game.publisher}</span>
+                                </div>
+                            </div>
+                        </div>
 
                         {game.description && (
                             <div>
@@ -123,54 +161,57 @@ export default function GamePage({ params }) {
                     {/* Sidebar (Direita) */}
                     <aside className="md:col-span-1 mt-0 md:mt-0">
                         <div className="sticky top-24">
-                            <div className="hidden md:flex mb-4 items-center justify-center p-4 min-h-[280px]">
-                                <div className="relative w-full max-w-[250px] h-[100px]">
-                                    <Image
-                                        src={displayImage}
-                                        alt={imageAlt}
-                                        fill
-                                        className="object-contain"
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="p-2 rounded-lg">
-                                <div className="flex items-center justify-between gap-4">
-                                    {discountPercent > 0 && (
-                                        <Badge variant="destructive" className="text-base">{game.discount}</Badge>
-                                    )}
-                                    <div className="flex flex-col items-end">
-                                        {discountPercent > 0 && (
-                                            <span className="text-sm text-muted-foreground line-through">
-                                                R$ {originalDisplayPrice}
-                                            </span>
-                                        )}
-                                        <span className="text-2xl font-bold">R$ {displayPrice}</span>
+                            <div className="hidden md:block">
+                            
+                                <div className="hidden md:flex mb-4 items-center justify-center p-4 min-h-[280px]">
+                                    <div className="relative w-full max-w-[250px] h-[100px]">
+                                        <Image
+                                            src={displayImage}
+                                            alt={imageAlt}
+                                            fill
+                                            className="object-contain"
+                                        />
                                     </div>
                                 </div>
-                            </div>
 
-                            <div className="mt-4 grid grid-cols-1 gap-3">
-                                <Button size="lg">
-                                    <ShoppingCart className="mr-2" />
-                                    Adicionar ao Carrinho
-                                </Button>
-                                <Button size="lg" variant="outline">
-                                    <Heart className="mr-2" />
-                                    Adicionar à Lista de Desejos
-                                </Button>
-                            </div>
-
-                            <Separator className="my-6" />
-
-                            <div className="space-y-4 text-sm">
-                                <div className="flex justify-between">
-                                    <span className="text-muted-foreground">Desenvolvedora</span>
-                                    <span className="font-semibold text-right">{game.developer.filter(d => d.trim()).join(", ")}</span>
+                                <div className="p-2 rounded-lg">
+                                    <div className="flex items-center justify-between gap-4">
+                                        {discountPercent > 0 && (
+                                            <Badge variant="destructive" className="text-base">{game.discount}</Badge>
+                                        )}
+                                        <div className="flex flex-col items-end">
+                                            {discountPercent > 0 && (
+                                                <span className="text-sm text-muted-foreground line-through">
+                                                    R$ {originalDisplayPrice}
+                                                </span>
+                                            )}
+                                            <span className="text-2xl font-bold">R$ {displayPrice}</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="flex justify-between">
-                                    <span className="text-muted-foreground">Publicadora</span>
-                                    <span className="font-semibold text-right">{game.publisher}</span>
+
+                                <div className="mt-4 grid grid-cols-1 gap-3">
+                                    <Button size="lg">
+                                        <ShoppingCart className="mr-2" />
+                                        Adicionar ao Carrinho
+                                    </Button>
+                                    <Button size="lg" variant="outline">
+                                        <Heart className="mr-2" />
+                                        Adicionar à Lista de Desejos
+                                    </Button>
+                                </div>
+
+                                <Separator className="my-6" />
+
+                                <div className="space-y-4 text-sm">
+                                    <div className="flex justify-between">
+                                        <span className="text-muted-foreground">Desenvolvedora</span>
+                                        <span className="font-semibold text-right">{game.developer.filter(d => d.trim()).join(", ")}</span>
+                                    </div>
+                                    <div className="flex justify-between">
+                                        <span className="text-muted-foreground">Publicadora</span>
+                                        <span className="font-semibold text-right">{game.publisher}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
