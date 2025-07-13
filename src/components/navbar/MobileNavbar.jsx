@@ -6,20 +6,17 @@ import { Menu } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet"
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { ThemeToggle } from "./ThemeToggle";
 
 const genres = [
     { title: "Ação", href: "/games/genero/acao" },
@@ -32,20 +29,14 @@ const genres = [
 
 export function MobileNavbar() {
     return (
-        <Sheet>
-            <SheetTrigger asChild>
+        <Drawer>
+            <DrawerTrigger asChild>
                 <Button variant="outline" size="icon">
                     <Menu className="h-5 w-5" />
-                    <span className="sr-only">Abrir menu</span>
                 </Button>
-            </SheetTrigger>
-            <SheetContent side="left" className="w-full sm:w-[400px]">
-                <SheetHeader className="text-left">
-                    <SheetTitle>
-                        <ThemeToggle />
-                    </SheetTitle>
-                </SheetHeader>
-                <div className="mt-8 flex flex-col gap-1">
+            </DrawerTrigger>
+            <DrawerContent>
+                <div className="flex flex-col gap-1 p-4 pb-20">
                     <MobileLink href="/">Home</MobileLink>
                     
                     <Accordion type="single" collapsible className="w-full">
@@ -75,17 +66,20 @@ export function MobileNavbar() {
                     <MobileLink href="/promocoes">Promoções</MobileLink>
                     <MobileLink href="/sobrenos">Sobre</MobileLink>
                 </div>
-            </SheetContent>
-        </Sheet>
+            </DrawerContent>
+        </Drawer>
     )
 }
 
 function MobileLink({ href, children }) {
     return (
-        <SheetClose asChild>
-            <Link href={href} className="block p-3 rounded-md hover:bg-muted text-base font-medium">
+        <DrawerClose asChild>
+            <Link 
+                href={href} 
+                className="block p-3 rounded-md hover:bg-muted text-base font-medium"
+            >
                 {children}
             </Link>
-        </SheetClose>
+        </DrawerClose>
     )
 }
