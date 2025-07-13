@@ -5,12 +5,13 @@ import { Button } from "@/components/ui/button"
 import { Navbar } from "@/components/navbar/navbar.jsx"
 import { Logo } from "./logo";
 import { ThemeToggle } from "./ThemeToggle";
+import { MobileNavbar } from "./MobileNavbar" 
 
 export function Header() {
   return (
     <nav className="py-2 border-0">
       <div className="container mx-auto flex flex-wrap justify-around">
-        <ThemeToggle /> {/* 2. Substitua o Logo pelo ThemeToggle */}
+        <ThemeToggle />
         <div className="hidden md:flex">
           <Navbar />
         </div>
@@ -18,10 +19,12 @@ export function Header() {
           <Button variant="outline">
             Login
           </Button>
-          <Button>Sign Up</Button>
+          <Button className={"hidden md:flex"}>Sign Up</Button>
           {/* Mobile Menu */}
           <div className="md:hidden">
-            {/* <MobileNavbar /> */}
+            <div className="md:hidden">
+            <MobileNavbar />
+          </div>
           </div>
         </div>
       </div>

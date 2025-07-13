@@ -23,6 +23,25 @@ export const GamesData = [
             { id: 5, image: "https://media.rawg.io/media/screenshots/5b6/5b6ca3d7560717089b6a52b5b5ce83ac.jpg" },
             { id: 6, image: "https://media.rawg.io/media/screenshots/e2b/e2bf9482bb198af39cd6ac7431e7e1a7.jpg" }
         ],
+        description: "A versão remasterizada da aclamada sequência, seguindo a jornada de vingança de Ellie em um mundo pós-apocalíptico brutal. Inclui melhorias gráficas e conteúdo adicional.",
+        requirements: {
+            minimum: {
+                os: "Windows 10/11 de 64 bits (versão 1909 ou mais recente)",
+                processor: "Intel Core i3-8100, AMD Ryzen 3 1300X",
+                memory: "16 GB",
+                graphics: "NVIDIA GeForce GTX 1650, AMD Radeon RX 5500 XT",
+                storage: "150 GB",
+                notes: "SSD necessário"
+            },
+            recommended: {
+                os: "Windows 10/11 de 64 bits (versão 1909 ou mais recente)",
+                processor: "Intel Core i5-8600, AMD Ryzen 5 3600",
+                memory: "16 GB",
+                graphics: "NVIDIA GeForce RTX 3060, AMD Radeon RX 5700",
+                storage: "150 GB",
+                notes: "SSD necessário"
+            }
+        },
     },
     {
         id: 2,
@@ -47,6 +66,26 @@ export const GamesData = [
             { id: 5, image: "https://media.rawg.io/media/screenshots/c36/c36438fbeda36defb62d39fd73c4cb08.jpg" },
             { id: 6, image: "https://media.rawg.io/media/screenshots/c63/c63d86519f64a717f73e0e3638658701.jpg" },
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 8 32-bit",
+                processor: "AMD Athlon X2 2.8 GHz / Intel Core 2 Duo 2.4 GHz",
+                memory: "4 GB",
+                graphics: "AMD Radeon HD 3870 / NVIDIA GeForce 8800 GT",
+                storage: "30 GB",
+                notes: "Placa de vídeo com 512 MB de memória."
+            },
+            recommended: {
+                os: "Windows 8 64-bit",
+                processor: "AMD Six-core CPU / Intel Quad-core CPU",
+                memory: "8 GB",
+                graphics: "AMD Radeon HD 7870 / NVIDIA GeForce GTX 660",
+                storage: "30 GB",
+                notes: "Placa de vídeo com 3 GB de memória."
+            }
+        },
+        description: "Um jogo de tiro em primeira pessoa focado em guerra moderna e combate multiplayer em larga escala. A Edição Premium inclui o jogo base e todas as cinco expansões com novos mapas e modos.",
+    
     },
     {
         id: 3,
@@ -70,6 +109,26 @@ export const GamesData = [
             { id: 4, image: "https://media.rawg.io/media/screenshots/7d1/7d112ad515211a01639d22eef5093c47.jpg" },
             { id: 5, image: "https://media.rawg.io/media/screenshots/6ff/6ff530af3788338486569ce723d503bd.jpg" }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10/11 de 64 bits (versão 1909 ou mais recente)",
+                processor: "Intel Core i3-8100 ou AMD Ryzen 3 3100",
+                memory: "16 GB",
+                graphics: "NVIDIA GeForce GTX 1650 ou AMD Radeon RX 5500 XT",
+                storage: "140 GB",
+                notes: "SSD necessário"
+            },
+            recommended: {
+                os: "Windows 10/11 de 64 bits (versão 1909 ou mais recente)",
+                processor: "Intel Core i5-8400 ou AMD Ryzen 5 3600",
+                memory: "16 GB",
+                graphics: "NVIDIA GeForce RTX 3060 ou AMD Radeon RX 5700",
+                storage: "140 GB",
+                notes: "SSD necessário"
+            }
+        },
+        description: "Peter Parker e Miles Morales unem forças para proteger Nova York de novas ameaças, incluindo o simbionte Venom e Kraven, o Caçador, alternando entre os dois heróis em um mundo aberto expandido.",
+    
     },
     {
         id: 4,
@@ -94,6 +153,26 @@ export const GamesData = [
             { id: 5, image: "https://media.rawg.io/media/screenshots/aeb/aeb5d332cea63b7037543bd30d6da14e.jpg" },
             { id: 6, image: "https://media.rawg.io/media/screenshots/80d/80d237e149c2c7cc96da096adb78292f.jpg" }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10",
+                processor: "Intel Core i7-4790K / AMD Ryzen 5 1600",
+                memory: "8 GB",
+                graphics: "NVIDIA GeForce GTX 1060 (6 GB) / AMD Radeon RX 570 (8 GB)",
+                storage: "100 GB (SSD)",
+                notes: "Requer SSD. Configuração para 1080p, 30 FPS, Preset Baixo."
+            },
+            recommended: {
+                os: "Windows 10",
+                processor: "Intel Core i7-8700K / AMD Ryzen 5 3600",
+                memory: "16 GB",
+                graphics: "NVIDIA GeForce RTX 2070 (8 GB) / AMD Radeon RX 5700 XT (8 GB)",
+                storage: "100 GB (SSD)",
+                notes: "Requer SSD. Configuração para 1080p, 60 FPS, Preset Alto."
+            }
+        },
+        description: "Ambientado no Japão feudal, explore um mundo aberto como Naoe, uma shinobi, e Yasuke, um samurai lendário. Domine estilos de jogo complementares para unificar o Japão.",
+    
     },
     {
         id: 5,
@@ -118,6 +197,26 @@ export const GamesData = [
             { id: 5, image: "https://media.rawg.io/media/screenshots/16b/16bca296df99c20d6d54d67b2e6ad71b.jpg" },
             { id: 6, image: "https://media.rawg.io/media/screenshots/7bb/7bb0c8b67c9add59d1a13ebb7da790b1.jpg" }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10",
+                processor: "Intel Core i7-8700K / AMD Ryzen 5 1600X",
+                memory: "8 GB",
+                graphics: "NVIDIA GeForce GTX 1060 6 GB / AMD Radeon RX 5600 XT 6 GB / Intel Arc A380 6 GB",
+                storage: "55 GB",
+                notes: "SSD necessário. As especificações mínimas permitem jogabilidade em 1080p 30FPS com configurações baixas."
+            },
+            recommended: {
+                os: "Windows 10",
+                processor: "Intel Core i7-12700K / AMD Ryzen 7 5800X",
+                memory: "16 GB",
+                graphics: "NVIDIA GeForce RTX 3060 Ti 8 GB / AMD Radeon RX 6800 XT 16 GB",
+                storage: "55 GB",
+                notes: "SSD necessário. As especificações recomendadas permitem jogabilidade em 1080p 60FPS com configurações altas."
+            }
+        },
+        description: "Um RPG de turno com arte única. Lidere a Expedição 33 em uma missão desesperada para destruir a Paintress, que a cada ano apaga um número do monólito, condenando todos daquela idade.",
+    
     },
     {
         id: 6,
@@ -139,6 +238,26 @@ export const GamesData = [
             { id: 2, image: "https://cdn2.unrealengine.com/2kcap-inverness-screenshots-exploration-era-mongolia-city-02-1920x1080-4b0b2b7a02f4.jpg" },
             { id: 3, image: "https://cdn2.unrealengine.com/2kgds-inverness-screenshots-modern-era-military-battle-wide-shot-01-1920x1080-509b0e3b39d7.jpg" }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10",
+                processor: "Intel i5-4690 / Intel i3-10100 / AMD Ryzen 3 1200",
+                memory: "8 GB",
+                graphics: "NVIDIA GTX 1050 / AMD RX 460 / Intel Arc A380",
+                storage: "20 GB",
+                notes: "SSD necessário."
+            },
+            recommended: {
+                os: "Windows 10",
+                processor: "Intel Core i5-10400 / AMD Ryzen 5 3600X",
+                memory: "16 GB",
+                graphics: "NVIDIA RTX 2060 / AMD RX 6600 / Intel Arc A750",
+                storage: "20 GB",
+                notes: "SSD necessário."
+            }
+        },
+        description: "A próxima evolução da lendária franquia de estratégia. Construa seu império, avance pela história e compita contra os maiores líderes do mundo para criar uma civilização que resista ao teste do tempo.",
+    
     },
     {
         id: 7,
@@ -162,6 +281,24 @@ export const GamesData = [
             { id: 4, image: "https://media.rawg.io/media/screenshots/012/01206b42a2993714b7edbc7058a88c4e.jpg" },
             { id: 5, image: "https://media.rawg.io/media/screenshots/7d1/7d1d54007d861bed70197ad4494666dd.jpg" }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10",
+                processor: "Intel Core i3-3225 3.3 GHz ou equivalente",
+                memory: "4 GB",
+                graphics: "NVIDIA GeForce GTX 670 / AMD R9 280",
+                storage: "3 GB"
+            },
+            recommended: {
+                os: "Windows 10",
+                processor: "Intel Core i5-4570 3.20 GHz ou equivalente",
+                memory: "8 GB",
+                graphics: "NVIDIA GeForce GTX 970 / AMD RX 480",
+                storage: "3 GB"
+            }
+        },
+        description: "Uma jornada de autodescoberta e exploração em um deserto de mundo aberto. Guie Sable através de paisagens deslumbrantes em sua moto flutuante, resolvendo quebra-cabeças e conhecendo outros nômades.",
+    
     },
     {
         id: 8,
@@ -187,6 +324,26 @@ export const GamesData = [
             { id: 5, image: "https://media.rawg.io/media/screenshots/585/585fd40ad660779a79e2853f3cd7a833.jpg" },
             { id: 6, image: "https://media.rawg.io/media/screenshots/7cb/7cb256eecd9dd0bb54d4524dc2a9b7ee.jpg" }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10 (Versão 1909 ou mais recente)",
+                processor: "AMD Ryzen 5 1500X / Intel Core i7-4770K",
+                memory: "16 GB",
+                graphics: "AMD Radeon RX 470 (4 GB) / NVIDIA GeForce GTX 970 (4 GB)",
+                storage: "100 GB (SSD)",
+                notes: "Configuração para 720p, 30 FPS, Preset Baixo."
+            },
+            recommended: {
+                os: "Windows 10 (Versão 1909 ou mais recente)",
+                processor: "AMD Ryzen 5 3600X / Intel Core i7-8700",
+                memory: "16 GB",
+                graphics: "AMD Radeon RX 6600 XT (8 GB) / NVIDIA GeForce RTX 2070 Super (8 GB)",
+                storage: "100 GB (SSD)",
+                notes: "Configuração para 1080p, 60 FPS, Preset Alto."
+            }
+        },
+        description: "Uma recriação completa do jogo original. Acompanhe a jornada emocionante e perigosa de Joel e Ellie através de uma América devastada, reconstruída do zero para o hardware moderno.",
+    
     },
         // a partir daqui, os jogos podem estar com as informações incompletas
     {
@@ -213,6 +370,26 @@ export const GamesData = [
             { id: 6, image: " " },
             { id: 7, image: " " }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10 (versão 1903)",
+                processor: "Intel i5-4330 / AMD Ryzen 3 1200",
+                memory: "8 GB",
+                graphics: "NVIDIA GTX 960 (4 GB) / AMD R9 290X (4 GB)",
+                storage: "126 GB (HDD)",
+                notes: "Configuração para 720p, 30 FPS, Preset Médio. Recomenda-se SSD."
+            },
+            recommended: {
+                os: "Windows 10 (versão 1903)",
+                processor: "Intel i7-4770 / AMD Ryzen 5 1500X",
+                memory: "16 GB",
+                graphics: "NVIDIA GTX 1060 (6 GB) / AMD RX 570 (4 GB)",
+                storage: "126 GB (SSD)",
+                notes: "Configuração para 1080p, 30 FPS, Preset Alto."
+            }
+        },
+        description: "Inclui as aventuras single-player remasterizadas de UNCHARTED 4: A Thief's End e UNCHARTED: The Lost Legacy. Cace tesouros ao redor do mundo com Nathan Drake e Chloe Frazer.",
+    
     },
     {
         id: 10,
@@ -238,6 +415,26 @@ export const GamesData = [
             { id: 5, image: "https://media.rawg.io/media/screenshots/22c/22c038eb6dfcf4ba3b466e3bacc451c5.jpg" },
             { id: 6, image: "https://media.rawg.io/media/screenshots/ea0/ea0af644fb10443ffff0b3dad18efc99.jpg" }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10",
+                processor: "Intel Core i5-3470 / AMD Ryzen 3 1200",
+                memory: "8 GB",
+                graphics: "GeForce GTX 1050 (4 GB) / AMD Radeon RX 560 (4 GB)",
+                directx: "Versão 12",
+                storage: "80 GB",
+                notes: "Requer processador e sistema operacional de 64 bits."
+            },
+            recommended: {
+                os: "Windows 10",
+                processor: "Intel Core i7-3770 / AMD Ryzen 5 1600",
+                memory: "8 GB",
+                graphics: "GeForce GTX 1060 (6 GB) / AMD Radeon RX 590",
+                directx: "Versão 12",
+                storage: "80 GB",
+                notes: "Requer processador e sistema operacional de 64 bits."
+            }
+        },
         description: "Uma versão aprimorada do jogo de ação e aventura de mundo aberto, onde você joga como Sam Porter Bridges, um entregador em um mundo pós-apocalíptico que deve reconectar a América.",
     },
     {
@@ -265,6 +462,26 @@ export const GamesData = [
             { id: 6, image: "https://media.rawg.io/media/screenshots/eb6/eb62a90b62e1ab18aef1c70da7d91b3a.jpg" },
             { id: 7, image: " " }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10 64-bits",
+                processor: "Intel Core i5-2500K@3.3GHz / AMD FX 6300@3.5GHz",
+                memory: "8 GB",
+                graphics: "Nvidia GeForce GTX 780 (3 GB) / AMD Radeon R9 290 (4 GB)",
+                directx: "Versão 11",
+                storage: "70 GB",
+                notes: "Recomenda-se o uso de SSD."
+            },
+            recommended: {
+                os: "Windows 10 64-bits",
+                processor: "Intel Core i7-4770K@3.5GHz / Ryzen 5 1500X@3.5GHz",
+                memory: "16 GB",
+                graphics: "Nvidia GeForce GTX 1060 (6 GB) / AMD Radeon RX 580 (8 GB)",
+                directx: "Versão 11",
+                storage: "70 GB",
+                notes: "Recomenda-se o uso de SSD."
+            }
+        },
         description: "Um jogo de ação e aventura em mundo aberto ambientado em um mundo pós-apocalíptico, onde você joga como Deacon St. John, um ex-motociclista e caçador de recompensas tentando sobreviver.",
     },
     {
@@ -291,6 +508,26 @@ export const GamesData = [
             { id: 6, image: " " },
             { id: 7, image: " " }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10 64-bits",
+                processor: "Intel Core i5-2500K@3.3GHz / AMD FX 6300@3.5GHz",
+                memory: "8 GB",
+                graphics: "Nvidia GeForce GTX 780 (3 GB) / AMD Radeon R9 290 (4 GB)",
+                directx: "Versão 12",
+                storage: "100 GB"
+            },
+            recommended: {
+                os: "Windows 10 64-bits",
+                processor: "Intel Core i7-4770K@3.5GHz / Ryzen 5 1500X@3.5GHz",
+                memory: "16 GB",
+                graphics: "Nvidia GeForce GTX 1060 (6 GB) / AMD Radeon RX 580 (8 GB)",
+                directx: "Versão 12",
+                storage: "100 GB"
+            }
+        },
+        description: "Explore um mundo exuberante e pós-apocalíptico dominado por máquinas mortais. Como a caçadora Aloy, desvende os mistérios de seu passado e do colapso da antiga civilização.",
+    
     },
     {
         id: 13,
@@ -316,6 +553,26 @@ export const GamesData = [
             { id: 6, image: " " },
             { id: 7, image: " " }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10 64-bit (version 1909 or higher)",
+                processor: "Intel Core i3-8100 / AMD Ryzen 3 1300X",
+                memory: "16 GB",
+                graphics: "NVIDIA GeForce GTX 1650 (4 GB) / AMD Radeon RX 5500XT (4 GB)",
+                storage: "150 GB (SSD)",
+                notes: "Configuração para 720p, 30 FPS, Preset Muito Baixo."
+            },
+            recommended: {
+                os: "Windows 10 64-bit (version 1909 or higher)",
+                processor: "Intel Core i5-8600 / AMD Ryzen 5 3600",
+                memory: "16 GB",
+                graphics: "NVIDIA GeForce RTX 3060 / AMD Radeon RX 6600",
+                storage: "150 GB (SSD)",
+                notes: "Configuração para 1080p, 60 FPS, Preset Médio."
+            }
+        },
+        description: "Junte-se a Aloy enquanto ela desbrava o Oeste Proibido, uma fronteira perigosa que esconde novas e misteriosas ameaças. A Edição Completa inclui a expansão Burning Shores.",
+    
     },
         {
         id: 14,
@@ -340,6 +597,26 @@ export const GamesData = [
             { id: 5, image: "https://media.rawg.io/media/screenshots/585/585fd40ad660779a79e2853f3cd7a833.jpg" },
             { id: 6, image: "https://media.rawg.io/media/screenshots/7cb/7cb256eecd9dd0bb54d4524dc2a9b7ee.jpg" }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10 (Versão 1909 ou mais recente)",
+                processor: "AMD Ryzen 5 1500X / Intel Core i7-4770K",
+                memory: "16 GB",
+                graphics: "AMD Radeon RX 470 (4 GB) / NVIDIA GeForce GTX 970 (4 GB)",
+                storage: "100 GB (SSD)",
+                notes: "Configuração para 720p, 30 FPS, Preset Baixo."
+            },
+            recommended: {
+                os: "Windows 10 (Versão 1909 ou mais recente)",
+                processor: "AMD Ryzen 5 3600X / Intel Core i7-8700",
+                memory: "16 GB",
+                graphics: "AMD Radeon RX 6600 XT (8 GB) / NVIDIA GeForce RTX 2070 Super (8 GB)",
+                storage: "100 GB (SSD)",
+                notes: "Configuração para 1080p, 60 FPS, Preset Alto."
+            }
+        },
+        description: "Um pacote de atualização para o jogo base The Last of Us™ Part I. Desbloqueia antecipadamente itens no jogo, como melhorias de habilidades, modos de jogo extras e skins de armas.",
+    
     },
     {
         id: 15,
@@ -365,6 +642,26 @@ export const GamesData = [
             { id: 6, image: " " },
             { id: 7, image: " " }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 7/8.1/10 64-bit",
+                processor: "AMD FX-6100 / Intel Core i3-3220",
+                memory: "8 GB",
+                graphics: "AMD Radeon HD 7750 / NVIDIA GeForce GTX 650",
+                directx: "Versão 11",
+                storage: "55 GB"
+            },
+            recommended: {
+                os: "Windows 7/8.1/10 64-bit",
+                processor: "AMD Ryzen 7 1700 / Intel Core i7-6700K",
+                memory: "16 GB",
+                graphics: "AMD RX Vega 56 / Nvidia GTX 1070",
+                directx: "Versão 11",
+                storage: "55 GB"
+            }
+        },
+        description: "Como Cal Kestis, um dos últimos Jedi sobreviventes, você deve escapar do Império enquanto redescobre suas habilidades da Força e reconstrói a Ordem Jedi nesta aventura em terceira pessoa.",
+    
     },
     {
         id: 16,
@@ -390,6 +687,25 @@ export const GamesData = [
             { id: 6, image: " " },
             { id: 7, image: " " }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10 64-bit",
+                processor: "4 core / 8 threads | Intel Core i7-7700 / Ryzen 5 1400",
+                memory: "8 GB",
+                graphics: "8GB VRAM | DX12 | AMD Radeon RX 580 / Nvidia GeForce GTX 1070",
+                storage: "155 GB",
+                notes: "Requer processador e sistema operacional de 64 bits."
+            },
+            recommended: {
+                os: "Windows 10 64-bit",
+                processor: "4 core / 8 threads | Intel Core i5 11600K / Ryzen 5 5600X",
+                memory: "16 GB",
+                graphics: "8GB VRAM | DX12 | AMD RX 6700 XT / Nvidia GeForce RTX 2070",
+                storage: "155 GB (SSD)",
+                notes: "Requer processador e sistema operacional de 64 bits. Recomenda-se SSD."
+            }
+        },
+        description: "A continuação da jornada de Cal Kestis. Agora um Cavaleiro Jedi mais poderoso, Cal luta para proteger a galáxia de novas e familiares ameaças enquanto carrega o fardo de ser um dos últimos Jedi.",
     },
     {
         id: 17,
@@ -415,6 +731,25 @@ export const GamesData = [
             { id: 5, image: "https://media.rawg.io/media/screenshots/de9/de9b28bdd0bdb9937c7f82e55f845bb6.jpg" },
             { id: 6, image: "https://media.rawg.io/media/screenshots/3a2/3a2e5f31e2061bc566bcfd30fda56a17.jpg" }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10",
+                processor: "INTEL CORE I5-8400 / AMD RYZEN 3 3300X",
+                memory: "12 GB",
+                graphics: "NVIDIA GEFORCE GTX 1060 (3 GB) / AMD RADEON RX 580 (4 GB)",
+                directx: "Versão 12",
+                storage: "60 GB"
+            },
+            recommended: {
+                os: "Windows 10/11",
+                processor: "INTEL CORE I7-8700K / AMD RYZEN 5 3600X",
+                memory: "16 GB",
+                graphics: "NVIDIA GEFORCE GTX 1070 (8 GB) / AMD RADEON RX VEGA 56 (8 GB)",
+                directx: "Versão 12",
+                storage: "60 GB"
+            }
+        },
+        description: "Um vasto RPG de ação e fantasia criado por Hidetaka Miyazaki (FromSoftware) e George R. R. Martin. Explore as Terras Intermédias, um mundo aberto repleto de segredos e perigos.",
     },
     {
         id: 18,
@@ -439,6 +774,25 @@ export const GamesData = [
             { id: 5, image: "https://media.rawg.io/media/screenshots/394/394afcdcc64eff27002f7bc2383c2ade.jpg" },
             { id: 6, image: "https://media.rawg.io/media/screenshots/cb2/cb27a3f806860ac667e6edf9a1f8dd1d.jpg" }
         ],
+        requirements: {
+            minimum: {
+                os: "Windows 10",
+                processor: "INTEL CORE I5-8400 / AMD RYZEN 3 3300X",
+                memory: "12 GB",
+                graphics: "NVIDIA GEFORCE GTX 1060 (3 GB) / AMD RADEON RX 580 (4 GB)",
+                directx: "Versão 12",
+                storage: "60 GB"
+            },
+            recommended: {
+                os: "Windows 10/11",
+                processor: "INTEL CORE I7-8700K / AMD RYZEN 5 3600X",
+                memory: "16 GB",
+                graphics: "NVIDIA GEFORCE GTX 1070 (8 GB) / AMD RADEON RX VEGA 56 (8 GB)",
+                directx: "Versão 12",
+                storage: "60 GB"
+            }
+        },
+        description: "Uma grande expansão para Elden Ring que leva os jogadores para a Terra das Sombras, uma nova área com chefes, inimigos, armas e uma história inédita para descobrir.",
     },
     // {
     //     id: 18,
