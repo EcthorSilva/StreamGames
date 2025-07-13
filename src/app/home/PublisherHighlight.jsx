@@ -71,7 +71,6 @@ export default function PublisherHighlight({ publisherName }) {
                   <a className="group cursor-pointer">
                     <Card className="bg-transparent border-none overflow-hidden rounded-lg py-0">
                       <CardContent className="p-0 relative">
-                        {/* ALTERAÇÃO: Div de preço agora é dinâmica */}
                         <div className="absolute bottom-2 right-2 z-10">
                             <div className="flex items-center gap-2 rounded-lg bg-black/70 px-2 py-1 text-sm text-white backdrop-blur-sm">
                                 <span className="font-bold text-base">
@@ -84,7 +83,6 @@ export default function PublisherHighlight({ publisherName }) {
                                 )}
                             </div>
                         </div>
-                        {/* ALTERAÇÃO: Usando `game.gamecover` e `game.name` no Image do Next.js */}
                         <Image
                           src={game.gamecover}
                           alt={`Capa do jogo ${game.name}`}
