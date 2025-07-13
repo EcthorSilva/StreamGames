@@ -39,19 +39,17 @@ export default function FeaturedGames({ featuredGameIds = [] }) {
                   className="object-cover rounded-lg group-hover:brightness-110 transition-transform duration-400 group-hover:scale-105"
                 />
 
-                {/* CORREÇÃO: Lógica do preço/desconto ajustada */}
                 <div className="absolute bottom-2 right-2 z-10">
-                  <h6 className="text-white bg-black/60 px-2 py-1 rounded text-sm flex items-center gap-2 backdrop-blur-sm">
-                    {/* O preço é exibido sempre */}
-                    R$ {displayPrice}
-
-                    {/* A tag de desconto só aparece se o desconto for maior que 0 */}
+                  <div className="flex items-center gap-2 rounded-lg bg-black/70 px-2 py-1 text-sm text-white backdrop-blur-sm">
+                    <span className="font-bold text-base">
+                      R$ {displayPrice}
+                    </span>
                     {discountPercent > 0 && (
-                      <span className="bg-red-600 text-white text-xs font-bold px-1.5 py-0.5 rounded">
+                      <span className="rounded bg-red-600 px-1.5 py-0.5 text-xs font-bold">
                         {game.discount}
                       </span>
                     )}
-                  </h6>
+                  </div>
                 </div>
               </Link>
 

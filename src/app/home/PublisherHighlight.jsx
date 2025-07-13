@@ -12,18 +12,14 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-// ALTERAÇÃO: Importando os dados reais
 import { GamesData } from "@/data/gameData.js";
 
-// ALTERAÇÃO: O componente agora aceita a prop `publisherName`
 export default function PublisherHighlight({ publisherName }) {
 
-  // ALTERAÇÃO: Filtra os jogos com base no nome da publicadora recebido via prop
   const publisherGames = GamesData.filter(
     (game) => game.publisher === publisherName
   );
 
-  // ALTERAÇÃO: Se não encontrar jogos para essa publicadora, o componente não renderiza nada
   if (publisherGames.length === 0) {
     return null;
   }
@@ -33,12 +29,11 @@ export default function PublisherHighlight({ publisherName }) {
       <Carousel
         opts={{
           align: "start",
-          loop: publisherGames.length > 6, // Ativa o loop apenas se houver mais jogos que o visível
+          loop: publisherGames.length > 6, 
         }}
         className="w-full"
       >
         <div className="relative mb-4 h-9">
-            {/* ALTERAÇÃO: O título agora é dinâmico */}
             <h2 className="text-2xl font-bold hover:text-gray-800 cursor-pointer">
                 {publisherName}
             </h2>
@@ -48,10 +43,8 @@ export default function PublisherHighlight({ publisherName }) {
             </div>
         </div>
 
-        {/* ALTERAÇÃO: O conteúdo do carrossel agora mapeia os jogos filtrados */}
         <CarouselContent className="-ml-4">
           {publisherGames.map((game) => {
-            // Lógica de cálculo de preço e desconto
             const originalPrice = parseFloat(game.price.replace(",", "."));
             const discountPercent = parseInt(game.discount.replace(/[^0-9]/g, ""), 10) || 0;
             
