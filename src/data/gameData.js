@@ -1,5 +1,3 @@
-import { Description } from "@radix-ui/react-dialog";
-
 export const GamesData = [
     {
         id: 1,
@@ -255,15 +253,16 @@ export const GamesData = [
         genreIds: [1, 2],
         platformIds: [1, 2],
         storeIds: [1, 2],
+        logo: "https://cdn2.steamgriddb.com/icon_thumb/57dd3b27ac1f94261bb338d61b3df823.png",
         gamecover: "https://cdn1.epicgames.com/9f4875c1b0cf4cf19b28e203fc7aff07/offer/EGS_Brutalopenworldactionadventuregame_BendStudio_S2-1200x1600-e1c183cc11fdb47e26581e5ba19aa10a.jpg?resize=1&w=360&h=480&quality=medium",
         background_image: "https://media.rawg.io/media/games/a79/a79d2fc90c4dbf07a8580b19600fd61d.jpg",
         short_screenshots: [
-            { id: 1, image: " " },
-            { id: 2, image: " " },
-            { id: 3, image: " " },
-            { id: 4, image: " " },
-            { id: 5, image: " " },
-            { id: 6, image: " " },
+            { id: 1, image: "https://media.rawg.io/media/screenshots/d16/d1624ea26f29b604400244980cb0f9e8.jpg" },
+            { id: 2, image: "https://media.rawg.io/media/screenshots/13c/13ccc479deb5ba11e19469af5f985993.jpg" },
+            { id: 3, image: "https://media.rawg.io/media/screenshots/95d/95d863d3a8c32c678bef3aca785eeec2.jpg" },
+            { id: 4, image: "https://media.rawg.io/media/screenshots/e6a/e6acca940023249bedd169a0c926666d_VTodzdV.jpg" },
+            { id: 5, image: "https://media.rawg.io/media/screenshots/f64/f64d0ae9988a55edfc3db331ef72d4d1.jpg" },
+            { id: 6, image: "https://media.rawg.io/media/screenshots/eb6/eb62a90b62e1ab18aef1c70da7d91b3a.jpg" },
             { id: 7, image: " " }
         ],
         description: "Um jogo de ação e aventura em mundo aberto ambientado em um mundo pós-apocalíptico, onde você joga como Deacon St. John, um ex-motociclista e caçador de recompensas tentando sobreviver.",

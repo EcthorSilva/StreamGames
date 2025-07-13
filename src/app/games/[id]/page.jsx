@@ -120,12 +120,12 @@ export default function GamePage({ params }) {
                             </div>
                         </div>
 
-                        {game.description && (
+                        {/* {game.description && (
                             <div>
                                 <h2 className="text-2xl font-bold border-b pb-2 mb-4">Sobre o Jogo</h2>
                                 <p className="text-muted-foreground leading-relaxed">{game.description}</p>
                             </div>
-                        )}
+                        )} */}
 
                         <span className="text-sm text-muted-foreground mt-4 block">Breve introdução ao jogo</span>
                         {/* Descrição do Jogo */}
@@ -145,15 +145,75 @@ export default function GamePage({ params }) {
                         </div>
                         {/* Requisitos de sistema  */}
                         <div className="mt-10">
-                            <h2 className="text-xl font-bold border-b pb-2 mb-4">Requisitos de Sistema para {game.name}</h2>
-                            <p className="text-muted-foreground leading-relaxed">
-                                Requisitos mínimos: <br /> <br />
-                                Sistema Operacional: Windows 10 <br />
-                                Processador: Intel Core i5 <br />
-                                Memória: 8 GB de RAM <br />
-                                Placa de Vídeo: NVIDIA GTX 960 <br />
-                                Armazenamento: 20 GB de espaço disponível
-                            </p>
+                            <h2 className="text-xl font-bold border-b pb-2 mb-4">Requisitos de Sistema para Days Gone</h2>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 mt-6 text-sm">
+                                {/* Coluna Mínimos */}
+                                <div className="space-y-4">
+                                    <h3 className="text-lg font-semibold text-primary">Mínimo</h3>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">SO Windows</p>
+                                        <p>Windows 10 de 64 bits</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">Processador do Windows</p>
+                                        <p>Intel Core i5-2500K de 3,3 GHz ou AMD FX 6300 de 3,5 GHz</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">Memória do Windows</p>
+                                        <p>8 GB</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">Armazenamento no Windows</p>
+                                        <p>70 GB</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">DirectX no Windows</p>
+                                        <p>11</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">Placa de vídeo para Windows</p>
+                                        <p>NVIDIA GeForce GTX 780 de 3 GB ou AMD Radeon R9 290 de 4 GB</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">Windows - Outros</p>
+                                        <p>Embora não seja obrigatório, recomenda-se a utilização de SSD para armazenamento e 16 GB de memória.</p>
+                                    </div>
+                                </div>
+
+                                {/* Recomendados */}
+                                <div className="space-y-4">
+                                    <h3 className="text-lg font-semibold text-primary">Recomendado</h3>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">SO Windows</p>
+                                        <p>Windows 10 de 64 bits</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">Processador do Windows</p>
+                                        <p>Intel Core i7-4770K de 3,5 GHz ou Ryzen 5 1500X de 3,5 GHz</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">Memória do Windows</p>
+                                        <p>16 GB</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">Armazenamento no Windows</p>
+                                        <p>70 GB</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">DirectX no Windows</p>
+                                        <p>11</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">Placa de vídeo para Windows</p>
+                                        <p>NVIDIA GeForce GTX 1060 de 6 GB ou AMD Radeon RX 580 de 8 GB</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-muted-foreground">Windows - Outros</p>
+                                        <p>Embora não seja obrigatório, recomenda-se a utilização de SSD para armazenamento.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
