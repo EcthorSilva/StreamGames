@@ -11,7 +11,7 @@ export function GridBackground() {
           <div
             key={i}
             aria-hidden="true"
-            className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-4 p-4"
+            className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-10 gap-4 p-4"
           >
             {gamesWithCovers.map((game, index) => (
               <div key={`${i}-${index}`} className="aspect-[3/4] relative rounded-md overflow-hidden">

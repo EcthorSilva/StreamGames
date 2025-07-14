@@ -794,56 +794,98 @@ export const GamesData = [
         },
         description: "Uma grande expansão para Elden Ring que leva os jogadores para a Terra das Sombras, uma nova área com chefes, inimigos, armas e uma história inédita para descobrir.",
     },
-    // {
-    //     id: 19,
-    //     name: " ",
-    //     type: "Jogo base",
-    //     price: " ",
-    //     discount: "0",
-    //     publisher: " ",
-    //     developer: [
-    //         " ", " ", " "
-    //     ],
-    //     genreIds: [1, 2],
-    //     platformIds: [1, 2],
-    //     storeIds: [1, 2],
-    //     gamecover: " ",
-    //     background_image: " ",
-    //     short_screenshots: [
-    //         { id: 1, image: " " },
-    //         { id: 2, image: " " },
-    //         { id: 3, image: " " },
-    //         { id: 4, image: " " },
-    //         { id: 5, image: " " },
-    //         { id: 6, image: " " },
-    //         { id: 7, image: " " }
-    //     ],
-    // },
-    // {
-    //     id: 20,
-    //     name: " ",
-    //     type: "Jogo base",
-    //     price: " ",
-    //     discount: "0",
-    //     publisher: " ",
-    //     developer: [
-    //         " ", " ", " "
-    //     ],
-    //     genreIds: [1, 2],
-    //     platformIds: [1, 2],
-    //     storeIds: [1, 2],
-    //     gamecover: " ",
-    //     background_image: " ",
-    //     short_screenshots: [
-    //         { id: 1, image: " " },
-    //         { id: 2, image: " " },
-    //         { id: 3, image: " " },
-    //         { id: 4, image: " " },
-    //         { id: 5, image: " " },
-    //         { id: 6, image: " " },
-    //         { id: 7, image: " " }
-    //     ],
-    // },
+    {
+        id: 19,
+        name: "Figment 2: Creed Valley",
+        type: "Jogo base",
+        price: "66,99",
+        discount: "-100",
+        publisher: "Bedtime Digital Games",
+        developer: [
+            "Bedtime Digital Games", " ", " "
+        ],
+        genreIds: [2],
+        platformIds: [1, 5, 8],
+        storeIds: [1, 3, 6],
+        logo: "https://cdn2.steamgriddb.com/logo_thumb/831b910669b007efb3eee43f4973a2ea.png",
+        gamecover: "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Figment2CreedValley_BedtimeDigitalGames_S2_1200x1600-aee3edb65954908fbacadc5dbbfbed4e?resize=1&w=360&h=480&quality=medium",
+        background_image: "https://media.rawg.io/media/screenshots/628/6280ae2b69b5d716b25c4d75053433d2.jpg",
+        short_screenshots: [
+            { id: 1, image: "https://media.rawg.io/media/screenshots/bc0/bc0dd9293d67ffc1d10fdea6d8be542a.jpg" },
+            { id: 2, image: "https://media.rawg.io/media/screenshots/73b/73b81c432ac9e1768e8878e0f12067a9.jpg" },
+            { id: 3, image: "https://media.rawg.io/media/screenshots/53f/53f365f1c0b37c9d4e9bb483a25b9302.jpg" },
+            { id: 4, image: "https://media.rawg.io/media/screenshots/bea/beadf5c7903cab11fd6e0ca0f633ee2e.jpg" },
+            { id: 5, image: "https://media.rawg.io/media/screenshots/23b/23be9bdd83d0d33dc4578f5616707e5a.jpg" },
+            { id: 6, image: " " },
+            { id: 7, image: " " }
+        ],
+        requirements: {
+            minimum: {
+                os: "Windows 7/8/10",
+                processor: "Intel Core i5 2500 / AMD FX 6120",
+                memory: "4 GB",
+                graphics: "NVIDIA GEFORCE GTX 1060 (3 GB) / AMD RADEON RX 580 (4 GB)",
+                directx: "Compatível com DirectX 11",
+                storage: "2 GB"
+            },
+            recommended: {
+                os: "Windows 10 / Windows 11",
+                processor: "Intel Core i5 7600 / AMD Ryzen 5 1600",
+                memory: "8 GB",
+                graphics: "NVIDIA GEFORCE GTX 1070 (8 GB) / AMD RADEON RX VEGA 56 (8 GB)",
+                directx: "Compatível com DirectX 11",
+                storage: "2 GB",
+                notes: ""
+            }
+        },
+        description: "Figment 2: Creed Valley é um jogo de ação e aventura que se passa dentro da mente humana. Pesadelos espalharam o caos e tomaram conta de terras outrora pacíficas.",
+    },
+    {
+        id: 20,
+        name: "The Sims™ 4",
+        type: "Jogo base",
+        price: "0",
+        discount: "0",
+        publisher: "Electronic Arts",
+        developer: [
+            "Maxis", " ", " "
+        ],
+        genreIds: [1, 2],
+        platformIds: [1],
+        storeIds: [1, 2],
+        logo: "https://cdn2.steamgriddb.com/icon_thumb/bca382c81484983f2d437f97d1e141f3.png",
+        gamecover: "https://cdn1.epicgames.com/offer/2a14cf8a83b149919a2399504e5686a6/EGS_TheSims4_ElectronicArts_S2_1200x1600-ceadc3bd1e6f885ad64d9f115f51f5c0?resize=1&w=360&h=480&quality=medium",
+        background_image: "https://media.rawg.io/media/games/e44/e445335e611b4ccf03af71fffcbd30a4.jpg",
+        short_screenshots: [
+            { id: 1, image: "https://media.rawg.io/media/screenshots/72c/72c690315354c314ed292aac71aeb231.jpg" },
+            { id: 2, image: "https://media.rawg.io/media/screenshots/5da/5da8b4ed0c50a84db6aa8a6504854d14.jpg" },
+            { id: 3, image: "https://media.rawg.io/media/screenshots/695/69566d0e355c337308742bce08f36af0.jpg" },
+            { id: 4, image: "https://media.rawg.io/media/screenshots/95c/95c67b60122424e021ccf028829c529c.jpg" },
+            { id: 5, image: "https://media.rawg.io/media/screenshots/ceb/ceb2381b094ec125cffb76bcf1afdea8.jpg" },
+            { id: 6, image: "https://media.rawg.io/media/screenshots/95a/95aa076f45d0b25830f60c05e001cfc8.jpg" },
+            { id: 7, image: " " }
+        ],
+        requirements: {
+            minimum: {
+                os: "Requer 64 bits. Windows 10",
+                processor: "ntel Core i3-3220 (2 núcleos, 4 threads) de 3,3 GHz, AMD Ryzen 3 1200 de 3,1 GHz (4 núcleos) ou superior",
+                memory: "4 GB",
+                graphics: "128 MB de RAM de vídeo: NVIDIA GeForce 6600 / ATI Radeon X1300 / Intel GMA X4500 ou superior",
+                directx: "DirectX 11",
+                storage: "26 GB",
+            },
+            recommended: {
+                os: "Windows 10 de 64 bits",
+                processor: "Intel Core i5 (4 núcleos), AMD Ryzen 5 ou superior",
+                memory: "8 GB",
+                graphics: "NVIDIA GTX 650, AMD Radeon HD 7750 com 1 GB de memória de vídeo ou superior",
+                directx: "DirectX 11",
+                storage: "51 GB",
+                notes: "Contas para login obrigatórias: EA app"
+            }
+        },
+        description: "The Sims 4 está gratuito para download! Solte a imaginação e crie um mundo único de Sims para se expressar! Escolha a aparência, o modo de agir e de se vestir dos Sims e decida como devem viver os altos e baixos de cada dia.",
+    },
     // {
     //     id: 21,
     //     name: " ",
