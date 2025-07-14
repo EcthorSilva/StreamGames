@@ -1,9 +1,9 @@
 "use client"
 
+import Link from "next/link" 
 import * as React from "react"
 import { Button } from "@/components/ui/button"
 import { Navbar } from "@/components/navbar/navbar.jsx"
-import { Logo } from "./logo";
 import { ThemeToggle } from "./ThemeToggle";
 import { MobileNavbar } from "./MobileNavbar" 
 
@@ -17,9 +17,11 @@ export function Header() {
         </div>
         <div className="flex items-center gap-3">
           <Button variant="outline">
-            Login
+            <Link href="/login">Login</Link>
           </Button>
-          <Button className={"hidden md:flex"}>Sign Up</Button>
+          <Button className={"hidden md:flex"}>
+            <Link href="/signup">Sign Up</Link>
+          </Button>
           {/* Mobile Menu */}
           <div className="md:hidden">
             <div className="md:hidden">

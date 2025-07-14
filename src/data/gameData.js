@@ -795,31 +795,6 @@ export const GamesData = [
         description: "Uma grande expansão para Elden Ring que leva os jogadores para a Terra das Sombras, uma nova área com chefes, inimigos, armas e uma história inédita para descobrir.",
     },
     // {
-    //     id: 18,
-    //     name: " ",
-    //     type: "Jogo base",
-    //     price: " ",
-    //     discount: "0",
-    //     publisher: " ",
-    //     developer: [
-    //         " ", " ", " "
-    //     ],
-    //     genreIds: [1, 2],
-    //     platformIds: [1, 2],
-    //     storeIds: [1, 2],
-    //     gamecover: " ",
-    //     background_image: " ",
-    //     short_screenshots: [
-    //         { id: 1, image: " " },
-    //         { id: 2, image: " " },
-    //         { id: 3, image: " " },
-    //         { id: 4, image: " " },
-    //         { id: 5, image: " " },
-    //         { id: 6, image: " " },
-    //         { id: 7, image: " " }
-    //     ],
-    // },
-    // {
     //     id: 19,
     //     name: " ",
     //     type: "Jogo base",
