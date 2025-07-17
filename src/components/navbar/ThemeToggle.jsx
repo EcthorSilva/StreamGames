@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { Power, PowerOff } from "lucide-react";
+import { Lightbulb, LightbulbOff } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 
@@ -27,6 +28,8 @@ export function ThemeToggle() {
       aria-label="Toggle theme"
       className="transition-all duration-300 ease-in-out transform hover:scale-110"
     >
+      {/* <LightbulbOff className={`absolute h-6 w-6 transition-all duration-500 ${isDark ? "scale-100 rotate-0" : "scale-0 -rotate-90"}`} />
+      <Lightbulb className={`h-6 w-6 transition-all duration-500 ${isDark ? "scale-0 rotate-90" : "scale-100 rotate-0"}`} /> */}
       <PowerOff className={`absolute h-6 w-6 transition-all duration-500 ${isDark ? "scale-100 rotate-0" : "scale-0 -rotate-90"}`} />
       <Power className={`h-6 w-6 transition-all duration-500 ${isDark ? "scale-0 rotate-90" : "scale-100 rotate-0"}`} />
       <span className="sr-only">Alternar tema</span>
