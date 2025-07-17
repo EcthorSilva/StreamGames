@@ -83,7 +83,7 @@ export function Navbar() {
                     <NavigationMenuTrigger>Comunidade</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid w-[300px] gap-3 ">
-                            <ListItem title="Noticias" href="/noticias" icon={Newspaper}>Fique por dentro das últimas notícias do mundo dos games.</ListItem>
+                            <ListItem title="Noticias" href="/news" icon={Newspaper}>Fique por dentro das últimas notícias do mundo dos games.</ListItem>
                             <ListItem title="Fóruns" href="/foruns" icon={MessageSquare}>Converse com outros jogadores e tire suas dúvidas.</ListItem>
                             <ListItem title="Lojas Parceiras" href="/lojas-parceiras" icon={Store}>Conheça todas as lojas que confiamos.</ListItem>
                         </ul>

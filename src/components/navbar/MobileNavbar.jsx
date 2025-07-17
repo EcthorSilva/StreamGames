@@ -64,6 +64,7 @@ export function MobileNavbar() {
                     </Accordion>
 
                     <MobileLink href="/promocoes">Promoções</MobileLink>
+                    <MobileLink href="/news">Notícias</MobileLink>
                     <MobileLink href="/sobrenos">Sobre</MobileLink>
                 </div>
             </DrawerContent>
